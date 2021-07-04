@@ -5,7 +5,7 @@ class Inputs:
     def getInput(self):
         while ValueError:
             try:
-                number = float(input("Enter number:      "))
+                number = float(input("Enter number:\t"))
                 return number
             except ValueError:
                 print("Enter a valid number")
@@ -14,7 +14,7 @@ class Inputs:
         op = input(
             " Enter the operator: '+' '-' '*' '/' "
             "\n Enter C for Clear "
-            "\n Enter ^ for power of a number \n Enter E to Exit the programme:      ")
+            "\n Enter ^ for power of a number \n Enter E to Exit the program:\t")
         return op
 
 class Functions:
@@ -42,7 +42,7 @@ class Functions:
     def checkexit(self):
         cfe = True
         while (cfe == True):
-            checkForExit = input("Are you sure you want to exit the programme?? \nEnter Y for Yes and N for No\t")
+            checkForExit = input("Are you sure you want to exit the program?? \nEnter Y for Yes and N for No\t")
             if (checkForExit.upper() == "Y"):
                 cfe = False
                 return 'E'
